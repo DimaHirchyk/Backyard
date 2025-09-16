@@ -31,10 +31,10 @@ export default function Hero() {
         Keep your yield working for you — we keep your liquidity accessible
       </p>
       <div className="font-semibold flex items-center gap-2 mt-9 2xl:mt-8 3xl:mt-[79px]">
-        <button className="bg-black-800 rounded-full text-white w-1/2 py-[18px] 3xl:w-1/4">
+        <button className="bg-black-800 rounded-full text-white w-1/2 py-[18px] 3xl:w-1/4 cursor-pointer hover:bg-black-800-hover transition-colors">
           Join Whitelist
         </button>
-        <button className="bg-gray-100 rounded-full text-black-800 w-1/2 sm:max-w-1/3 py-[18px] flex items-center justify-center gap-2.5 3xl:w-1/5">
+        <button className="bg-gray-100 rounded-full text-black-800 w-1/2 sm:max-w-1/3 py-[18px] flex items-center justify-center gap-2.5 3xl:w-1/5 cursor-pointer hover:bg-gray-100-hover transition-colors">
           Learn more{" "}
           <svg width={11} height={10} className="stroke-black-800">
             <use href="/icon.svg#icon-arrow"></use>

@@ -13,6 +13,7 @@
 
   --color-gray-50: rgba(239, 239, 242, 1);
   --color-gray-100: rgba(230, 232, 236, 1);
+  --color-gray-100-hover: rgba(248, 251, 255, 1);
   --color-gray-150: rgba(151, 151, 151, 1);
   --color-gray-200: rgba(174, 176, 177, 1);
   --color-gray-250: rgba(120, 120, 120, 1);
@@ -23,6 +24,7 @@
   --color-shadow-gray: rgba(225, 225, 226, 0.46);
 
   --color-black-800: rgba(45, 45, 45, 1);
+  --color-black-800-hover: rgba(59, 59, 59, 1);
   --color-black-850: rgba(45, 50, 47, 1);
   --color-black-900: rgba(51, 51, 51, 0.95);
   --color-black: rgba(48, 48, 48, 1);
