@@ -1,2 +1,55 @@
 @import "tailwindcss";
 @import "./stylesheet.css";
+
+@theme {
+  --font-family: "Gilroy", sans-serif;
+  --font-family-second: "Archivo", sans-serif;
+
+  --breakpoint-xs: 640px;
+  --breakpoint-2xl: 768px;
+  --breakpoint-3xl: 1392px;
+
+  --container-7xl: 1392px;
+
+  --color-gray-50: rgba(239, 239, 242, 1);
+  --color-gray-100: rgba(230, 232, 236, 1);
+  --color-gray-150: rgba(151, 151, 151, 1);
+  --color-gray-200: rgba(174, 176, 177, 1);
+  --color-gray-250: rgba(120, 120, 120, 1);
+  --color-gray-300: rgba(38, 38, 38, 0.55);
+  --color-gray-350: rgba(93, 98, 95, 1);
+  --color-light-gray: rgba(242, 243, 245, 1);
+  --color-gray-white: rgba(244, 246, 247, 1);
+  --color-shadow-gray: rgba(225, 225, 226, 0.46);
+
+  --color-black-800: rgba(45, 45, 45, 1);
+  --color-black-850: rgba(45, 50, 47, 1);
+  --color-black-900: rgba(51, 51, 51, 0.95);
+  --color-black: rgba(48, 48, 48, 1);
+}
+
+:root {
+  font-family: var(--font-family);
+  background-color: var(--color-gray-50);
+  color: var(--color-black);
+}
+
+.my-custom-pagination {
+  margin-top: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  width: 28px !important;
+  height: 4px !important;
+  background-color: var(--color-gray-150) !important;
+  margin: 0 6px !important;
+  border-radius: 148px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-gray-350) !important;
+  transform: scale(1.2);
+}

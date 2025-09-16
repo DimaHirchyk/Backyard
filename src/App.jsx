@@ -1,24 +1,30 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./heder/header";
-import { lazy, Suspense } from "react";
+import { Fragment, lazy, Suspense } from "react";
+import Header from "./components/heder/header";
 
-const Home = lazy(() => import("./Home/Home"));
-const Catalog = lazy(() => import("./catalog/catalog"));
-const CatalogDetails = lazy(() => import("./catalogDetails/catalogDetails"));
+const Home = lazy(() => import("./page/Home"));
 
 function App() {
   return (
-    <>
+    <Fragment>
       <Header />
       <Suspense fallback={null}>
-        {" "}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/catalog/:id" element={<CatalogDetails />} />
-        </Routes>
+        <main>
+          <img
+            className="absolute top-0 left-0 w-full h-full object-cover z-[-1] opacity-5 h-[550px]"
+            src="/bg.png"
+            alt="bg"
+          />
+          <div className="mx-auto max-w-7xl px-5 2xl:px-8 mt-6 2xl:mt-[62px] 3xl:mt-[85px]">
+            {" "}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              {/* <Route path="*" element={} /> */}
+            </Routes>
+          </div>
+        </main>
       </Suspense>
-    </>
+    </Fragment>
   );
 }
 
